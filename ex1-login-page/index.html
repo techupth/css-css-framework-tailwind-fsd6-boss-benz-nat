@@ -1,16 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Framework (Tailwind) Exercise 1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CSS Framework (Tailwind) Exercise 1</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-
-<body>
-  <!-- Start coding here -->
-</body>
-
+  <body>
+    <!-- Start coding here -->
+    <div class="webpage-bg h-lvh bg-slate-200 flex justify-center items-center">
+      <div class="card-form bg-white p-4 px-9 rounded-xl">
+        <h1 class="input-instruct my-4 text-zinc-600 text-xl font-medium">
+          Login to Website
+        </h1>
+        <form class="input-email-pass-section flex flex-col my-4" action="#">
+          <div
+            class="input-email flex justify-between items-center font-medium"
+          >
+            <label for="email">Email</label>
+            <input
+              class="input-email-box w-48 border outline-none border-zinc-600 p-2 hover:border-violet-500 focus:border-2 focus:border-violet-600 rounded-md mr-4"
+              type="email"
+              id="email"
+              name="email"
+            />
+          </div>
+          <div
+            class="input-pass flex justify-between items-center my-4 font-medium"
+          >
+            <label class="mr-2" for="pwd">Password</label>
+            <input
+              class="input-password-box w-48 border outline-none border-zinc-600 p-2 hover:border-violet-500 focus:border-2 focus:border-violet-600 rounded-md mr-4"
+              type="password"
+              id="password"
+              name="password"
+            />
+          </div>
+          <div class="form-buttons flex justify-evenly mt-1 gap-2">
+            <button
+              class="w-36 p-2 rounded-full bg-violet-500 text-white active:bg-violet-600 hover:bg-violet-400 focus:ring-2 focus:ring-violet-300 font-medium"
+              type="submit"
+            >
+              Sign in</button
+            ><button
+              class="w-36 p-2 rounded-full bg-white text-violet-500 hover:bg-violet-100 focus:ring-2 focus:ring-violet-300 focus:text-violet-600 font-medium active:bg-violet-200"
+              type="submit"
+            >
+              Sign up
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>
